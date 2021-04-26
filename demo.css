@@ -55,7 +55,7 @@
         position: absolute;
         top: 10%;
         right: 0%;
-        background-color: rgba(135, 207, 235, 0.37);
+        background-color: blueviolet;
     }
     
     .box {
@@ -107,44 +107,51 @@
     }
     
     .star_pos {
+        width: 100%;
         color: slategray;
-        position: relative;
-        bottom: 20%;
-        right: -5%;
+        padding: 5px;
+        display: flex;
+        flex-direction: row;
     }
     
-    .btn_right button {
+    button {
         width: 60px;
         font-size: 14px;
         border: none;
         padding: 3px;
-        margin: 5px 0;
         border-radius: 5px;
-        position: relative;
-        left: 5%;
         background-color: skyblue;
     }
     
     .star_pos h5 {
         font-size: 13px;
-        position: absolute;
-        bottom: 23%;
-        left: 40%;
         text-align: center;
+        padding: 5px;
     }
     
     .star_pos i {
+        width: 15%;
+        padding: 5px;
         font-size: 13px;
-        position: relative;
-        bottom: 20%;
-        right: -50%;
+    }
+    
+    .box_item1 {
+        flex: 1;
+    }
+    
+    .box_item2 {
+        flex: 2;
+    }
+    
+    .box_item3 {
+        flex: 1;
     }
     
     div {
         display: block;
     }
     
-    @media screen and (max-width:425px) {
+    @media screen and (max-width:426px) {
         .heading,
         h1 {
             margin-top: 10px;
@@ -155,15 +162,14 @@
             margin: auto;
             margin-bottom: 50px;
         }
-        .star_pos .btn_right {
-            position: absolute;
-            left: 0%;
-            font-size: 10px;
+        .box_item1 {
+            flex: 1;
         }
-        .star_pos h5 {
-            position: absolute;
-            left: 47%;
-            padding: 0;
+        .box_item2 {
+            flex: 3;
+        }
+        .box_item3 {
+            flex: 3;
         }
     }
     
@@ -179,19 +185,17 @@
         }
         .col .mainbox {
             width: 60%;
+            margin: auto;
             margin-bottom: 50px;
         }
-        .star_pos .btn_right {
-            position: absolute;
-            left: 0%;
-            font-size: 10px;
+        .box_item1 {
+            flex: 1;
         }
-        .star_pos .btn_right h5 {
-            text-align: center;
-            padding-left: 20px;
+        .box_item2 {
+            flex: 3;
         }
-        .star_pos i {
-            padding: 0px 3px;
+        .box_item3 {
+            flex: 1;
         }
     }
     
@@ -200,17 +204,13 @@
             width: 100%;
             margin: auto;
         }
-        .star_pos .btn_right {
-            position: absolute;
-            left: 0%;
-            font-size: 10px;
+        .box_item1 {
+            flex: 1;
         }
-        .star_pos .btn_right h5 {
-            text-align: center;
-            left: 80px;
+        .box_item2 {
+            flex: 2;
         }
-        .star_pos .btn_right i {
-            text-align: right;
-            left: 150px;
+        .box_item3 {
+            flex: 1;
         }
     }
